@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Preab attendance.css" type="text/css" />
-    <script type="text/javascript" src="Preab.js"></script>
     <title>PREAB</title>
 </head>
 <body>
@@ -22,11 +21,16 @@
         <input id="ID-number-label" class="ID-number-input" type="text" class="ID-number-input" placeholder="Company ID card Number"><br>
         <label for="password">Password:</label>
         <input id="password-label" type="text" class="password-input" placeholder="Enter your Password"><br>
-        <input id="submit" class="submit-button" type="Submit" value="Enter" onclick="getLocation()"> <p id="demo"></p> <br>
+        <button id="submit-button" type="button"  onclick="getLocation()">Enter</button> <br>
         <label for="remember-me">Remember Me</label>
         <input id="remember-me" type="checkbox" value="remember-me">
     </form>
     <a href="Another user.html">Another User?</a>
-    <span id="ct5" class="ct5"></span>
+
+    <p id="Geolocation"></p>
+    
+        <script type="text/javascript" src="Preab.js"></script>
 </body>
 </html>
+
+<!-- onclick="document.getElementById('submit-button').innerHTML = Date()" -->
